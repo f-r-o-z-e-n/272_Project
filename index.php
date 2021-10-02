@@ -47,9 +47,9 @@
         </pre>
       </div>
       <div class="row align-items-center">
-        <p>
+      <h4 class='contacts'>
             Life is an adventure! 
-        </p>
+      </h4>
       </div>
       <div class="footer">
         <p>@copyright: afroz@sjsu.edu</p>
