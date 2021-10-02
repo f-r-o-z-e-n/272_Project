@@ -47,7 +47,9 @@
         </pre>
       </div>
       <div class="row align-items-center" >
-        <p></p>
+        <p>
+            We provide all kinds of transportation solutions all over the globe.
+        </p>
       </div>
       <div class="footer">
         <p>@copyright: afroz@sjsu.edu</p>

@@ -48,7 +48,9 @@
         </pre>
       </div>
       <div class="row align-items-center">
-        <p></p>
+        <p>
+            We help you take a tour to any place you always wanted to visit...!
+        </p>
       </div>
       <div class="footer">
         <p>@copyright: afroz@sjsu.edu</p>
