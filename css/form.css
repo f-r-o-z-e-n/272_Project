@@ -1,0 +1,16 @@
+
+.form{
+    width: 60%;
+    margin: auto;
+    
+}
+.button-form-control{
+  width: 100%;
+  margin: auto;
+  background-color: rgb(10, 134, 200);
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) */
+}
+.button-form-control:hover{
+   background-color: rgb(10, 134, 236);
+   /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+}
