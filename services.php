@@ -42,11 +42,11 @@
         </div>
       </div>
       <div class="paragraph">
-        <pre><h1 class="h1Header">
+        <pre><h1 class="h1Header" style={padding-left: 300px;}>
           Services</h1>
         </pre>
       </div>
-      <div class="row align-items-center">
+      <div class="row align-items-center" >
         <p></p>
       </div>
       <div class="footer">
