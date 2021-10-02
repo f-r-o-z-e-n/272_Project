@@ -47,9 +47,9 @@
         </pre>
       </div>
       <div class="row align-items-center">
-        <p>
-            We are rated as the most lavish service by the Times of America !
-        </p>
+      <h4 class='contacts'>
+      We are rated as the most lavish service by the Times of America !
+      </h4>
       </div>
       <div class="footer">
         <p>@copyright: afroz@sjsu.edu</p>
