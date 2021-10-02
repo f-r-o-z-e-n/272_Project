@@ -34,9 +34,9 @@
             <nav class="nav justify-content-start">
               <a class="nav-link active nav-link" href="./index.php">Home</a>
               <a class="nav-link active nav-link" href="./about.php">About</a>
-              <a class="nav-link active nav-link" href="./about.php">Services</a>
-              <a class="nav-link active nav-link" href="./about.php">News</a>
-              <a class="nav-link active nav-link" href="./about.php">Contacts</a>
+              <a class="nav-link active nav-link" href="./services.php">Services</a>
+              <a class="nav-link active nav-link" href="./news.php">News</a>
+              <a class="nav-link active nav-link" href="./contacts.php">Contacts</a>
             </nav>
           </div>
         </div>
