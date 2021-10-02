@@ -43,7 +43,7 @@
       </div>
       <div class="paragraph">
         <pre>
-            <h1>Welcome to Spartan Tours and travels.</h1>
+            <h1>About</h1>
         </pre>
       </div>
       <div class="row align-items-center">
