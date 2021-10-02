@@ -47,7 +47,16 @@
         </pre>
       </div>
       <div class="row align-items-center">
-        <p></p>
+        <p>
+        <?php
+            $file = fopen("contacts.txt", "r");
+            while(!feof($file)) {
+                echo "<h4 class='contacts'>".fgets($file). "</h4><br>";
+            }
+            fclose($file);
+        ?>
+    </div>
+        </p>
       </div>
       <div class="footer">
         <p>@copyright: afroz@sjsu.edu</p>

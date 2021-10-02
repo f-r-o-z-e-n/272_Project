@@ -68,3 +68,10 @@ body{
     line-height: 1.2;
     padding-left: 230px;
 }
+
+.contacts{
+    text-align: center;
+    color: purple;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
