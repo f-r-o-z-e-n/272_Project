@@ -75,3 +75,7 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.errorMessage{
+    color:red !important;
+}

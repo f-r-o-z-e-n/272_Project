@@ -43,6 +43,7 @@
             <a class="nav-link active nav-link" href="./services.php">Services</a>
             <a class="nav-link active nav-link" href="./news.php">News</a>
             <a class="nav-link active nav-link" href="./contacts.php">Contacts</a>
+            <a class="nav-link active nav-link" href="./users.php">Users</a>
             </nav>
           </div>
         </div>
