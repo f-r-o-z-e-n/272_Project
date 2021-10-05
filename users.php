@@ -15,6 +15,12 @@
     <title>Spartan Tours and Travels</title>
   </head>
   <body>
+  <?php
+    session_start();
+    if (!isset($_SESSION['allowed'])){
+        header('location:login.php');
+    }
+    ?>
     <div class="container-fluid">
       <div class="row align-items-start" style="background-color: teal">
         <div class="col-2">
@@ -43,14 +49,20 @@
       </div>
       <div class="paragraph">
         <pre><h1 class="h1Header" style={padding-left: 300px;}>
-          Services</h1>
+          Contacts</h1>
         </pre>
       </div>
-      <div class="row align-items-center" >
-      <h4 class='contacts'>
-      We provide all kinds of transportation solutions all over the globe.
-      </h4>
-   
+      <div class="row align-items-center">
+        <p>
+        <?php
+            $file = fopen("users.txt", "r");
+            while(!feof($file)) {
+                echo "<h4 class='contacts'>".fgets($file). "</h4><br>";
+            }
+            fclose($file);
+        ?>
+    </div>
+        </p>
       </div>
       <div class="footer">
         <p>@copyright: afroz@sjsu.edu</p>

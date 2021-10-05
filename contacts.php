@@ -26,7 +26,7 @@
           </div>
           <div class="row">
             <nav class="nav justify-content-end">
-              <a class="nav-link nav-link" href="#">Login</a>
+              <a class="nav-link nav-link" href="login.php">Login</a>
               <a class="nav-link nav-link" href="#">Signup</a>
             </nav>
           </div>

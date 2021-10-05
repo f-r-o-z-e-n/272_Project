@@ -32,25 +32,51 @@
           </div>
           <div class="row">
             <nav class="nav justify-content-start">
-            <a class="nav-link active nav-link" href="./index.php">Home</a>
-            <a class="nav-link active nav-link" href="./about.php">About</a>
-            <a class="nav-link active nav-link" href="./services.php">Services</a>
-            <a class="nav-link active nav-link" href="./news.php">News</a>
-            <a class="nav-link active nav-link" href="./contacts.php">Contacts</a>
+              <a class="nav-link active nav-link" href="./index.php">Home</a>
+              <a class="nav-link active nav-link" href="./about.php">About</a>
+              <a class="nav-link active nav-link" href="./services.php">Services</a>
+              <a class="nav-link active nav-link" href="./news.php">News</a>
+              <a class="nav-link active nav-link" href="./contacts.php">Contacts</a>
             </nav>
           </div>
         </div>
       </div>
       <div class="paragraph">
-        <pre><h1 class="h1Header" style={padding-left: 300px;}>
-          Services</h1>
+        <pre>
+        <?php
+            session_start();
+
+            if (isset($_SESSION['message'])){
+                $message=$_SESSION['message'];
+            }
+            else{
+                $message="";
+            }
+        ?>
+        <div class="container mainContent" >
+        <h1>Login</h1>
+        <form method="post" action="logincheck.php">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="emailId">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <?php
+            echo "<h1 className='errorMessage'>".$message."</h1>";
+        ?>
+</form>
+
+    </div>
         </pre>
       </div>
-      <div class="row align-items-center" >
+      <div class="row align-items-center">
       <h4 class='contacts'>
-      We provide all kinds of transportation solutions all over the globe.
+            Life is an adventure! 
       </h4>
-   
       </div>
       <div class="footer">
         <p>@copyright: afroz@sjsu.edu</p>
@@ -58,3 +84,4 @@
     </div>
   </body>
 </html>
+
