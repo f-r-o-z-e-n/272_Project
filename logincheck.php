@@ -9,7 +9,7 @@
         $line=fgets($myfile);
         if (strpos($line, 'Email') !== false) {
             $checkEmail=explode(":",$line)[1];
-            $checkEmail = str_replace(' ','',$checkEmail);
+            $checkEmail = trim($checkEmail);
             echo '('.$checkEmail.')';
             echo strlen($checkEmail);
         }
