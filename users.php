@@ -15,7 +15,12 @@
     <title>Spartan Tours and Travels</title>
   </head>
   <body>
-  
+  <?php
+    session_start();
+    if (!isset($_SESSION['allowed'])){
+        header('location:login.php');
+    }
+    ?>
     <div class="container-fluid">
       <div class="row align-items-start" style="background-color: teal">
         <div class="col-2">
@@ -28,7 +33,7 @@
           <div class="row">
             <nav class="nav justify-content-end">
               <a class="nav-link nav-link" href="login.php">Login</a>
-              <a class="nav-link nav-link" href="#">Signup</a>
+              <a class="nav-link nav-link" href="logout.php">Logout</a>
             </nav>
           </div>
           <div class="row">
