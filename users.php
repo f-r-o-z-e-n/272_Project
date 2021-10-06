@@ -15,12 +15,7 @@
     <title>Spartan Tours and Travels</title>
   </head>
   <body>
-  <?php
-    session_start();
-    if (!isset($_SESSION['allowed'])){
-        header('location:login.php');
-    }
-    ?>
+  
     <div class="container-fluid">
       <div class="row align-items-start" style="background-color: teal">
         <div class="col-2">
