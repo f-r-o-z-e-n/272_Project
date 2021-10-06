@@ -14,6 +14,7 @@
         elseif(strpos($line, 'Password') !== false)
         {
             $checkPassword=explode(":",$line)[1];
+            $checkPassword = trim($checkPassword);
         }
       }
       echo "(".$checkEmail.")";
