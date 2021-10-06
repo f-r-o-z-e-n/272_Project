@@ -25,6 +25,5 @@
     }
     else{
         $_SESSION["message"]="Incorrect Email Id or Password";
-        header('location:login.php');
     }
 ?>
