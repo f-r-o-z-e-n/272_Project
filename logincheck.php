@@ -16,7 +16,11 @@
         }
       }
     fclose($myfile);
-    if ($checkEmail===$emailID && $checkPassword===$password){
+    echo 'console.log('. $checkEmail .')';
+    echo 'console.log('. $checkPassword .')';
+    echo 'console.log('. $emailID .')';
+    echo 'console.log('. $password .')';
+    if ($checkEmail==$emailID && $checkPassword==$password){
         $_SESSION["allowed"]=true;
         header('location:users.php');
     }
