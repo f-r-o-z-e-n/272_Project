@@ -26,10 +26,9 @@
     echo 'console.log('. $password .')';
     if ($checkEmail==$emailID && $checkPassword==$password){
         $_SESSION["allowed"]=true;
-        header('location:users.php');
     }
     else{
         $_SESSION["message"]="Incorrect Email Id or Password";
-        header('location:login.php');
+
     }
 ?>
