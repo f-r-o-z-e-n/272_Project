@@ -11,6 +11,7 @@
             $checkEmail=explode(":",$line)[1];
             $checkEmail = str_replace(' ','',$checkEmail);
             echo '('.$checkEmail.')';
+            echo strlen($checkEmail);
         }
         elseif(strpos($line, 'Password') !== false)
         {
