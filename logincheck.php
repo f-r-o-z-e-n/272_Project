@@ -16,6 +16,10 @@
         }
       }
     fclose($myfile);
+    $checkEmail = str_replace(' ','',$checkEmail);
+    $checkPassword = str_replace(' ','',$checkPassword);
+    $emailID = str_replace(' ','',$emailID);
+    $password = str_replace(' ','',$password);
     echo 'console.log('. $checkEmail .')';
     echo 'console.log('. $checkPassword .')';
     echo 'console.log('. $emailID .')';
