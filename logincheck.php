@@ -16,13 +16,17 @@
             $checkPassword=explode(":",$line)[1];
         }
       }
+      echo "(".$checkEmail.")";
+      echo "(".$checkPassword.")";
+      echo "(".$emailID.")";
+      echo "(".$password.")";
     fclose($myfile);
     if ($checkEmail==$emailID && $checkPassword==$password){
         $_SESSION["allowed"]=true;
-        header('location:users.php');
+        echo "inside if";
     }
     else{
         $_SESSION["message"]="Incorrect Email Id or Password";
-        header('location:login.php');
+        echo "inside else";
     }
 ?>
