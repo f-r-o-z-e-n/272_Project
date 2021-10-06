@@ -9,6 +9,8 @@
         $line=fgets($myfile);
         if (strpos($line, 'Email') !== false) {
             $checkEmail=explode(":",$line)[1];
+            $checkEmail = str_replace(' ','',$checkEmail);
+            echo '('.$checkEmail.')';
         }
         elseif(strpos($line, 'Password') !== false)
         {
@@ -16,10 +18,6 @@
         }
       }
     fclose($myfile);
-    $checkEmail = str_replace(' ','',$checkEmail);
-    $checkPassword = str_replace(' ','',$checkPassword);
-    $emailID = str_replace(' ','',$emailID);
-    $password = str_replace(' ','',$password);
     echo 'console.log('. $checkEmail .')';
     echo 'console.log('. $checkPassword .')';
     echo 'console.log('. $emailID .')';
