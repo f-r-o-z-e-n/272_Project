@@ -10,8 +10,6 @@
         if (strpos($line, 'Email') !== false) {
             $checkEmail=explode(":",$line)[1];
             $checkEmail = trim($checkEmail);
-            echo '('.$checkEmail.')';
-            echo strlen($checkEmail);
         }
         elseif(strpos($line, 'Password') !== false)
         {
@@ -19,15 +17,12 @@
         }
       }
     fclose($myfile);
-    echo 'console.log('. $checkEmail .')';
-    echo 'console.log('. $checkPassword .')';
-    echo 'console.log('. $emailID .')';
-    echo 'console.log('. $password .')';
     if ($checkEmail==$emailID && $checkPassword==$password){
         $_SESSION["allowed"]=true;
+        header('location:users.php');
     }
     else{
         $_SESSION["message"]="Incorrect Email Id or Password";
-
+        header('location:login.php');
     }
 ?>
