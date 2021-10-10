@@ -45,13 +45,41 @@
       </div>
       <div class="paragraph">
         <pre><h1 class="h1Header" style={padding-left: 100px;}>
-          Welcome to Spartan Tours and travels.</h1>
+          Create User</h1>
         </pre>
       </div>
       <div class="row align-items-center">
-      <h4 class='contacts'>
-            Life is an adventure! 
-      </h4>
+      <div class="container divContainer">
+        <h3>Register User</h3>
+        <form  method="post" action="addUser.php">
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control"  placeholder="First Name" required name='first_name'>
+        </div>
+        <div class="form-group">
+            <label>last Name</label>
+            <input type="text" class="form-control" placeholder="Last Name" required name='last_name'>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" placeholder="Email" required name='email'>
+        </div>
+        <div class="form-group">
+            <label>Home Address</label>
+            <input type="text" class="form-control"  placeholder="Address" required name='home_address'>
+        </div>
+        <div class="form-group">
+            <label>Home Phone</label>
+            <input type="text" pattern="[1-9]{1}[0-9]{9}" class="form-control"  placeholder="Home Phone" name='home_phone' >
+        </div>
+        <div class="form-group">
+            <label>Cell Phone</label>
+            <input type="text" pattern="[1-9]{1}[0-9]{9}" class="form-control"  placeholder="Cell Phone" required name='cell_phone'>
+        </div>
+        
+        <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
       </div>
       <div class="footer">
         <p>@copyright: afroz@sjsu.edu</p>

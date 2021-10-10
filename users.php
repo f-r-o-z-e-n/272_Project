@@ -44,6 +44,7 @@
             <a class="nav-link active nav-link" href="./news.php">News</a>
             <a class="nav-link active nav-link" href="./contacts.php">Contacts</a>
             <a class="nav-link active nav-link" href="./users.php">Users</a>
+            <a class="nav-link active nav-link" href="./userSection.php">Users from Database</a>
             </nav>
           </div>
         </div>
