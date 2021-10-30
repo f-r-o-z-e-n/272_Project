@@ -14,12 +14,12 @@ $prod = $result->fetch_assoc();
 ?>
 
 <?php
-if (isset($_COOKIE["lastids"])) {
-    if (explode(",", $_COOKIE["lastids"])[0] != $prod["id"]) {
-        setcookie("lastids", $prod["id"] . "," . $_COOKIE["lastids"], time() + (86400 * 30));
+if (isset($_COOKIE["id"])) {
+    if (explode(",", $_COOKIE["id"])[0] != $prod["ID"]) {
+        setcookie("id", $prod["ID"] . "," . $_COOKIE["id"], time() + (86400 * 30));
     }
 } else {
-    setcookie("lastids", $prod["id"], time() + (86400 * 30));
+    setcookie("id", $prod["ID"], time() + (86400 * 30));
 }
 ?>
 
