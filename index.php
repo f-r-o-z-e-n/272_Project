@@ -54,6 +54,15 @@
             Life is an adventure! 
       </h4>
       </div>
+
+      <div class="row align-items-center">
+          <img src="./Images/travel.jpg" alt="Travel" style="width:100%">
+          <div class="container">
+          </div>
+        </div>
+
+
+
       <div class="footer">
         <p>@copyright: afroz@sjsu.edu</p>
       </div>
