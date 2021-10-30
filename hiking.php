@@ -79,7 +79,7 @@ if (isset($_COOKIE["id"])) {
         <!-- The Mountains are calling for those who love the heights -->
       
         <div>  
-          <img src="./Images/hiker.jpeg" alt="Travel" style="width:100%">
+          <img src="./Images/hiker.jpeg" alt="Travel" style="width:50%">
           <div class="container">
           </div>
         </a>
