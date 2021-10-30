@@ -15,46 +15,42 @@ $prod = $result->fetch_assoc();
 
 <?php
 if (isset($_COOKIE["id"])) {
-    if (explode(",", $_COOKIE["id"])[0] != $prod["ID"]) {
-        setcookie("id", $prod["ID"] . "," . $_COOKIE["id"], time() + (86400 * 30));
-    }
+  if (explode(",", $_COOKIE["id"])[0] != $prod["ID"]) {
+    setcookie("id", $prod["ID"] . "," . $_COOKIE["id"], time() + (86400 * 30));
+  }
 } else {
-    setcookie("id", $prod["ID"], time() + (86400 * 30));
+  setcookie("id", $prod["ID"], time() + (86400 * 30));
 }
 ?>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/index.css" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <title>Spartan Tours and Travels</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row align-items-start" style="background-color: teal">
-        <div class="col-2">
-          <img src="Images/logo.jpg" class="logo" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <title>Spartan Tours and Travels</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row align-items-start" style="background-color: teal">
+      <div class="col-2">
+        <img src="Images/logo.jpg" class="logo" />
+      </div>
+      <div class="col-10">
+        <div class="row header-text">
+          <h2>Spartan Tours and Travels</h2>
         </div>
-        <div class="col-10">
-          <div class="row header-text">
-            <h2>Spartan Tours and Travels</h2>
-          </div>
-          <div class="row">
-            <nav class="nav justify-content-end">
-              <a class="nav-link nav-link" href="login.php">Login</a>
-              <a class="nav-link nav-link" href="logout.php">Logout</a>
-            </nav>
-          </div>
-          <div class="row">
-            <nav class="nav justify-content-start">
+        <div class="row">
+          <nav class="nav justify-content-end">
+            <a class="nav-link nav-link" href="login.php">Login</a>
+            <a class="nav-link nav-link" href="logout.php">Logout</a>
+          </nav>
+        </div>
+        <div class="row">
+          <nav class="nav justify-content-start">
             <a class="nav-link active nav-link" href="./index.php">Home</a>
             <a class="nav-link active nav-link" href="./about.php">About</a>
             <a class="nav-link active nav-link" href="./services.php">Services</a>
@@ -64,36 +60,38 @@ if (isset($_COOKIE["id"])) {
             <a class="nav-link active nav-link" href="./userSection.php">Users from Database</a>
             <a class="nav-link active nav-link" href="./top.php">Last five viewed services</a>
           </nav>
-          </div>
         </div>
       </div>
-      <div class="paragraph">
-        <pre>
+    </div>
+    <div class="paragraph">
+      <pre>
         <h1 class="h1Header" style="padding-left: 300px;">
         <?php echo $prod["Title"] ?></h1>
         </pre>
-      </div>
-      <div class="row align-items-center">
+    </div>
+    <div class="row align-items-center">
       <h4 class='contacts'>
         <?php echo $prod["Description"] ?>
         <!-- The Mountains are calling for those who love the heights -->
-      
-        <div>  
+      </h4>
+
+      <h4>
+        <div>
           <img src="./Images/hiker.jpeg" alt="Travel" style="width:50%">
           <div class="container">
           </div>
-      </div>
-
+        </div>
+      </h4>
+      
       <h4 class='contacts'>
         The package is priced at $<?php echo $prod["Price"] ?> only.
-      </h4> 
+      </h4>
 
-    
-
-      </div>
-      <div class="footer">
-        <p>@copyright: afroz@sjsu.edu</p>
-      </div>
     </div>
-  </body>
+    <div class="footer">
+      <p>@copyright: afroz@sjsu.edu</p>
+    </div>
+  </div>
+</body>
+
 </html>
