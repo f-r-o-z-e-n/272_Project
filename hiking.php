@@ -82,7 +82,6 @@ if (isset($_COOKIE["id"])) {
           <img src="./Images/hiker.jpeg" alt="Travel" style="width:50%">
           <div class="container">
           </div>
-        </a>
       </div>
 
       <h4 class='contacts'>
