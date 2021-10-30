@@ -47,19 +47,19 @@
       </div>
       <div class="paragraph">
         <pre><h1 class="h1Header" style="padding-left: 100px;">
-          Welcome to Spartan Tours and travels.</h1>
+          What are other viewers watching?</h1>
         </pre>
       </div>
       <div class="row align-items-center">
-      <h4 class='contacts'>
+      <!-- <h4 class='contacts'>
             Life is an adventure! 
-      </h4>
+      </h4> -->
       </div>
       <?php
                     if (isset($_COOKIE["id"])) {
                         echo "<table>";
                         echo "<tr>";
-                        echo "<th><h2>Titles</h2></th>";
+                        echo "<th><h2>Last Five viewed searches are as below:</h2></th>";
                         echo "</tr>";
                         $hits = explode(",", $_COOKIE["id"]);
                         $viewed = array();
