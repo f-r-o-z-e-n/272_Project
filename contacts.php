@@ -40,12 +40,13 @@
             <a class="nav-link active nav-link" href="./users.php">Users</a>
             <a class="nav-link active nav-link" href="./userSection.php">Users from Database</a>
             <a class="nav-link active nav-link" href="./top.php">Last five viewed services</a>
+            <a class="nav-link active nav-link" href="./mostVisited.php">Top five most Visited services</a>
           </nav>
           </div>
         </div>
       </div>
       <div class="paragraph">
-        <pre><h1 class="h1Header" style={padding-left: 300px;}>
+        <pre><h1 class="h1Header" style="padding-left: 300px;">
           Contacts</h1>
         </pre>
       </div>
