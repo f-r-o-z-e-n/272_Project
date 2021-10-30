@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<?php
+// $con = mysqli_connect('localhost', 'root', '');
+$con = mysqli_connect('localhost', 'root', 'afroz');
+mysqli_select_db($con, 'services');
+$query = 'select * from services where id="' . $_GET['id'] . '"';
+$result = mysqli_query($con, $query);
+$prod = $result->fetch_assoc();
+// $hits = $prod["hits"] + 1;
+// $conn->query("UPDATE products SET hits = " . $hits . " WHERE id = " . $id . ";");
+// $conn->close();
+?>
+
+<?php
+if (isset($_COOKIE["lastids"])) {
+    if (explode(",", $_COOKIE["lastids"])[0] != $prod["id"]) {
+        setcookie("lastids", $prod["id"] . "," . $_COOKIE["lastids"], time() + (86400 * 30));
+    }
+} else {
+    setcookie("lastids", $prod["id"], time() + (86400 * 30));
+}
+?>
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -46,7 +69,7 @@
       <div class="paragraph">
         <pre>
         <h1 class="h1Header" style="padding-left: 300px;">
-          Hiking Package</h1>
+        <?php echo $prod["title"] ?></h1>
         </pre>
       </div>
       <div class="row align-items-center">
@@ -54,8 +77,11 @@
         The Mountains are calling for those who love the heights
       </h4> 
       <h4 class='contacts'>
-        The package is priced at $500 only.
+        The package is priced at $<?php echo $prod["price"] ?> only.
       </h4> 
+
+    
+
       </div>
       <div class="footer">
         <p>@copyright: afroz@sjsu.edu</p>

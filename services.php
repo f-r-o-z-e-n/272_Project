@@ -69,7 +69,7 @@
 
       <h2>Packages List</h2>
 
-      <div class="card"> <a href="./hiking.php">
+      <div class="card"> <a href="./hiking.php?id=1">
           <img src="./Images/hiker.jpeg" alt="Hiker" style="width:100%">
           <div class="container">
             <h4><b>Hiking Package</b></h4>
