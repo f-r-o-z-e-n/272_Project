@@ -75,7 +75,7 @@ if (isset($_COOKIE["id"])) {
       </div>
       <div class="row align-items-center">
       <h4 class='contacts'>
-        $<?php echo $prod["Description"] ?>
+        <?php echo $prod["Description"] ?>
         <!-- The Mountains are calling for those who love the heights -->
       </h4> 
       <h4 class='contacts'>
