@@ -45,13 +45,16 @@
       </div>
       <div class="paragraph">
         <pre>
-        <h1 class="h1Header" style={padding-left: 300px;}>
-          About</h1>
+        <h1 class="h1Header" style="padding-left: 300px;">
+          Hiking Package</h1>
         </pre>
       </div>
       <div class="row align-items-center">
       <h4 class='contacts'>
-        We help you take a tour to any place you always wanted to visit...!
+        The Mountains are calling for those who love the heights
+      </h4> 
+      <h4 class='contacts'>
+        The package is priced at $500 only.
       </h4> 
       </div>
       <div class="footer">

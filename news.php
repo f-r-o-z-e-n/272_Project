@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="paragraph">
-        <pre><h1 class="h1Header" style={padding-left: 300px;}>
+        <pre><h1 class="h1Header" style="padding-left: 300px;">
           News</h1>
         </pre>
       </div>
