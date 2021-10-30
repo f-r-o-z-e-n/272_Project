@@ -69,25 +69,25 @@ if (isset($_COOKIE["id"])) {
         <?php echo $prod["Title"] ?></h1>
         </pre>
     </div>
-    <div class="row align-items-center">
+  
+      <div class="row align-items-center">
       <h4 class='contacts'>
         <?php echo $prod["Description"] ?>
         <!-- The Mountains are calling for those who love the heights -->
-      </h4>
+      </h4> 
+      <h4 class='contacts'>
+        The package is priced at $<?php echo $prod["Price"] ?> only.
+      </h4> 
 
-      
-        <div>
+       <div>
           <img src="./Images/hiker.jpeg" alt="Travel" style="width:50%">
           <div class="container">
           </div>
         </div>
-      
+     </div>
 
-      <h4 class='contacts'>
-        The package is priced at $<?php echo $prod["Price"] ?> only.
-      </h4>
 
-    </div>
+    
     <div class="footer">
       <p>@copyright: afroz@sjsu.edu</p>
     </div>
@@ -95,3 +95,5 @@ if (isset($_COOKIE["id"])) {
 </body>
 
 </html>
+
+ 
