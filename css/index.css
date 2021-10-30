@@ -13,34 +13,9 @@
     color: white;
 }
 
-body {
-    background-image: url("paper.gif");
-    background-color: #cccccc;
-   }
-
-
-/* body{
-    animation: animate 40s ease-in-out infinite;
+.body {
+    background-color: lightblue;
 }
-
-@keyframes animate {
-    0%,100%{
-        background-image: url("https://thumbs.dreamstime.com/b/business-meeting-concept-coworkers-team-working-new-startup-project-modern-office-analyze-business-documents-using-touch-tablet-94640997.jpg");
-        background-size: cover;
-    }
-    25%{
-        background-image: url("https://previews.123rf.com/images/mangpor2004/mangpor20041611/mangpor2004161100162/66030881-hand-typing-laptop-with-blank-blur-background-on-screen-for-mock-up-technology-lifestyle-digital-mar.jpg");
-        background-size: cover;
-    }
-    50%{
-        background-image: url("https://thumbs.dreamstime.com/b/business-people-meeting-office-blurred-image-team-110118415.jpg");
-        background-size: cover;
-    }
-    75%{
-        background-image: url("https://st2.depositphotos.com/3840453/9961/i/950/depositphotos_99613130-stock-photo-blurred-background-business-people-having.jpg");
-        background-size: cover;
-    }
-} */
 
 
 .logo{
