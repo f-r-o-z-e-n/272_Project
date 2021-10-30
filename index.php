@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="paragraph">
-        <pre><h1 class="h1Header" style="padding-left: 80px;">
+        <pre><h1 class="h1Header" style="padding-left: 60px;">
           Welcome to Spartan Tours and travels.</h1>
         </pre>
       </div>

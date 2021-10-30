@@ -29,6 +29,13 @@
 </head>
 
 <body>
+  <?php
+  if (!isset($_COOKIE["visited_pages"])) {
+    $count = 0;
+    setcookie("count", $count);
+    setcookie("visited_pages[0]", "abc");
+  }
+  ?>
   <div class="container-fluid">
     <div class="row align-items-start" style="background-color: teal">
       <div class="col-2">
@@ -70,7 +77,7 @@
 
       <h2>Packages List</h2>
 
-      <div class="card"> <a href="./hiking.php?id=1">   
+      <div class="card"> <a href="./hiking.php?id=1">
           <img src="./Images/hiker.jpeg" alt="Hiker" style="width:100%">
           <div class="container">
             <h4><b>Hiking Package</b></h4>
@@ -79,80 +86,80 @@
         </a>
       </div>
 
-      <div class="card"><a href="./hiking.php?id=2"> 
-        <img src="./Images/lake.jpeg" alt="Lake" style="width:100%">
-        <div class="container">
-          <h4><b>Lake Package</b></h4>
-          <p>Explore the Lakes</p>
-        </div>
+      <div class="card"><a href="./hiking.php?id=2">
+          <img src="./Images/lake.jpeg" alt="Lake" style="width:100%">
+          <div class="container">
+            <h4><b>Lake Package</b></h4>
+            <p>Explore the Lakes</p>
+          </div>
       </div>
 
-      <div class="card"><a href="./hiking.php?id=3"> 
-        <img src="./Images/beaches.webp" alt="Beaches" style="width:100%">
-        <div class="container">
-          <h4><b>Beach Package</b></h4>
-          <p>Explore the beaches</p>
-        </div>
+      <div class="card"><a href="./hiking.php?id=3">
+          <img src="./Images/beaches.webp" alt="Beaches" style="width:100%">
+          <div class="container">
+            <h4><b>Beach Package</b></h4>
+            <p>Explore the beaches</p>
+          </div>
       </div>
 
-      <div class="card"><a href="./hiking.php?id=4"> 
-        <img src="./Images/desert.jpeg" alt="Deserts" style="width:100%">
-        <div class="container">
-          <h4><b>Desert Package</b></h4>
-          <p>Explore the deserts</p>
-        </div>
+      <div class="card"><a href="./hiking.php?id=4">
+          <img src="./Images/desert.jpeg" alt="Deserts" style="width:100%">
+          <div class="container">
+            <h4><b>Desert Package</b></h4>
+            <p>Explore the deserts</p>
+          </div>
       </div>
 
-      <div class="card"><a href="./hiking.php?id=5"> 
-        <img src="./Images/forests.jpeg" alt="Forests" style="width:100%">
-        <div class="container">
-          <h4><b>Forest Package</b></h4>
-          <p>Explore the forest</p>
-        </div>
+      <div class="card"><a href="./hiking.php?id=5">
+          <img src="./Images/forests.jpeg" alt="Forests" style="width:100%">
+          <div class="container">
+            <h4><b>Forest Package</b></h4>
+            <p>Explore the forest</p>
+          </div>
       </div>
 
-      <div class="card"><a href="./hiking.php?id=6"> 
-        <img src="./Images/parachute.jpeg" alt="Parachutes" style="width:90%">
-        <div class="container">
-          <h4><b>Parachute Package</b></h4>
-          <p>Explore the parachutes</p>
-        </div>
+      <div class="card"><a href="./hiking.php?id=6">
+          <img src="./Images/parachute.jpeg" alt="Parachutes" style="width:90%">
+          <div class="container">
+            <h4><b>Parachute Package</b></h4>
+            <p>Explore the parachutes</p>
+          </div>
       </div>
 
-      <div class="card"><a href="./hiking.php?id=7"> 
-        <img src="./Images/monuments.jpeg" alt="Monuments" style="width:100%">
-        <div class="container">
-          <h4><b>Monument Package</b></h4>
-          <p>Explore the monuments</p>
-        </div>
+      <div class="card"><a href="./hiking.php?id=7">
+          <img src="./Images/monuments.jpeg" alt="Monuments" style="width:100%">
+          <div class="container">
+            <h4><b>Monument Package</b></h4>
+            <p>Explore the monuments</p>
+          </div>
       </div>
 
-      <div class="card"><a href="./hiking.php?id=8"> 
-        <img src="./Images/greenary.jpeg" alt="Greenary" style="width:100%">
-        <div class="container">
-          <h4><b>Greenary Package</b></h4>
-          <p>Explore the Greenary</p>
-        </div>
+      <div class="card"><a href="./hiking.php?id=8">
+          <img src="./Images/greenary.jpeg" alt="Greenary" style="width:100%">
+          <div class="container">
+            <h4><b>Greenary Package</b></h4>
+            <p>Explore the Greenary</p>
+          </div>
       </div>
 
-      <div class="card"><a href="./hiking.php?id=9"> 
-        <img src="./Images/roads.jpeg" alt="Roads" style="width:100%">
-        <div class="container">
-          <h4><b>Roads Package</b></h4>
-          <p>Explore the roads</p>
-        </div>
+      <div class="card"><a href="./hiking.php?id=9">
+          <img src="./Images/roads.jpeg" alt="Roads" style="width:100%">
+          <div class="container">
+            <h4><b>Roads Package</b></h4>
+            <p>Explore the roads</p>
+          </div>
       </div>
 
-      <div class="card"><a href="./hiking.php?id=10"> 
-        <img src="./Images/flower.webp" alt="Flower fields" style="width:100%">
-        <div class="container">
-          <h4><b>Flower Package</b></h4>
-          <p>Explore the flower fields</p>
-        </div>
+      <div class="card"><a href="./hiking.php?id=10">
+          <img src="./Images/flower.webp" alt="Flower fields" style="width:100%">
+          <div class="container">
+            <h4><b>Flower Package</b></h4>
+            <p>Explore the flower fields</p>
+          </div>
       </div>
 
 
-    <!-- </div>
+      <!-- </div>
     <div class="footer">
       <p>@copyright: afroz@sjsu.edu</p>
     </div>

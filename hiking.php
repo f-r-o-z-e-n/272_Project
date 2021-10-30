@@ -11,6 +11,17 @@ $prod = $result->fetch_assoc();
 // $hits = $prod["hits"] + 1;
 // $conn->query("UPDATE products SET hits = " . $hits . " WHERE id = " . $id . ";");
 // $conn->close();
+if (!isset($_COOKIE["visited_pages"])) {
+  $count = 0;
+  setcookie("count", $count);
+  setcookie("visited_pages[0]", "");
+  echo "cookies not set";
+} else {
+  $count = $_COOKIE["count"];
+  $count = $count + 1;
+  setcookie("visited_pages[" . $count . "]", $prod["Title"]);
+  setcookie("count", $count);
+}
 ?>
 
 <?php
@@ -69,25 +80,25 @@ if (isset($_COOKIE["id"])) {
         <?php echo $prod["Title"] ?></h1>
         </pre>
     </div>
-  
-      <div class="row align-items-center">
+
+    <div class="row align-items-center">
       <h4 class='contacts'>
         <?php echo $prod["Description"] ?>
         <!-- The Mountains are calling for those who love the heights -->
-      </h4> 
+      </h4>
       <h4 class='contacts'>
         The package is priced at $<?php echo $prod["Price"] ?> only.
-      </h4> 
+      </h4>
 
-       <div class="row align-items-center">
-          <img src="./Images/travel.jpg" alt="Travel" style="width:100%">
-          <div class="container">
-          </div>
+      <div class="row align-items-center">
+        <img src="./Images/travel.jpg" alt="Travel" style="width:100%">
+        <div class="container">
         </div>
-     </div>
+      </div>
+    </div>
 
 
-    
+
     <div class="footer">
       <p>@copyright: afroz@sjsu.edu</p>
     </div>
@@ -95,5 +106,3 @@ if (isset($_COOKIE["id"])) {
 </body>
 
 </html>
-
- 
