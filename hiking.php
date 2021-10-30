@@ -5,7 +5,7 @@
 // $con = mysqli_connect('localhost', 'root', '');
 $con = mysqli_connect('localhost', 'root', 'afroz');
 mysqli_select_db($con, 'spartanTours');
-$query = 'select * from services where id="' . $_GET['id'] . '"';
+$query = 'select * from services where ID="' . $_GET['id'] . '"';
 $result = mysqli_query($con, $query);
 $prod = $result->fetch_assoc();
 // $hits = $prod["hits"] + 1;
