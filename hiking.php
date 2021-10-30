@@ -79,7 +79,7 @@ if (isset($_COOKIE["id"])) {
         The package is priced at $<?php echo $prod["Price"] ?> only.
       </h4> 
 
-       <div>
+       <div class="row align-items-center">
           <img src="./Images/hiker.jpeg" alt="Travel" style="width:50%">
           <div class="container">
           </div>
