@@ -13,13 +13,10 @@
     color: white;
 }
 
-<style> 
 body {
-  background-image: url("img_tree.gif"), url("paper.gif");
-  background-repeat: no-repeat, repeat;
-  background-color: #cccccc;
-}
-</style>
+    background-image: url("forests.jpeg");
+    background-color: #cccccc;
+   }
 
 
 /* body{
