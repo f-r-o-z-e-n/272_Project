@@ -51,9 +51,7 @@
         </pre>
       </div>
       <div class="row align-items-center">
-      <!-- <h4 class='contacts'>
-            Life is an adventure! 
-      </h4> -->
+      
       </div>
       <?php
                     if (isset($_COOKIE["id"])) {

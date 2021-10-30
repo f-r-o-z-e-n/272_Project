@@ -77,7 +77,14 @@ if (isset($_COOKIE["id"])) {
       <h4 class='contacts'>
         <?php echo $prod["Description"] ?>
         <!-- The Mountains are calling for those who love the heights -->
-      </h4> 
+      
+        <div>  
+          <img src="./Images/hiker.jpeg" alt="Travel" style="width:100%">
+          <div class="container">
+          </div>
+        </a>
+      </div>
+
       <h4 class='contacts'>
         The package is priced at $<?php echo $prod["Price"] ?> only.
       </h4> 
