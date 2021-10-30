@@ -69,7 +69,7 @@ if (isset($_COOKIE["lastids"])) {
       <div class="paragraph">
         <pre>
         <h1 class="h1Header" style="padding-left: 300px;">
-        <?php echo $prod["title"] ?></h1>
+        <?php echo $prod["Title"] ?></h1>
         </pre>
       </div>
       <div class="row align-items-center">
@@ -77,7 +77,7 @@ if (isset($_COOKIE["lastids"])) {
         The Mountains are calling for those who love the heights
       </h4> 
       <h4 class='contacts'>
-        The package is priced at $<?php echo $prod["price"] ?> only.
+        The package is priced at $<?php echo $prod["Price"] ?> only.
       </h4> 
 
     
