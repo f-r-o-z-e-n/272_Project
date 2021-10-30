@@ -80,7 +80,7 @@ if (isset($_COOKIE["id"])) {
       </h4> 
 
        <div class="row align-items-center">
-          <img src="./Images/travel.jpeg" alt="Travel" style="width:100%">
+          <img src="./Images/travel.jpg" alt="Travel" style="width:100%">
           <div class="container">
           </div>
         </div>
