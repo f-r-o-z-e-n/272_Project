@@ -62,7 +62,8 @@ if (isset($_COOKIE["id"])) {
             <a class="nav-link active nav-link" href="./contacts.php">Contacts</a>
             <a class="nav-link active nav-link" href="./users.php">Users</a>
             <a class="nav-link active nav-link" href="./userSection.php">Users from Database</a>
-            </nav>
+            <a class="nav-link active nav-link" href="./top.php">Last five viewed services</a>
+          </nav>
           </div>
         </div>
       </div>
