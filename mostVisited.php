@@ -37,9 +37,8 @@
                         <a class="nav-link active nav-link" href="./users.php">Users</a>
                         <a class="nav-link active nav-link" href="./userSection.php">Users from Database</a>
                         <a class="nav-link active nav-link" href="./top.php">Last five viewed services</a>
+                        <a class="nav-link active nav-link" href="./mostVisited.php">Top five most Visited services</a>
                         
-                        <a class="nav-link active nav-link" href="./mostVisited.php">Top five most Visited services</a>
-                        <a class="nav-link active nav-link" href="./mostVisited.php">Top five most Visited services</a>
                     </nav>
                 </div>
             </div>
