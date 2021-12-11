@@ -22,7 +22,7 @@ if (!isset($_COOKIE["visited_pages"])) {
   setcookie("visited_pages[" . $count . "]", $prod["Title"]);
   setcookie("count", $count);
 }
-
+print_r($_COOKIE);
 
 $curl = curl_init();
 $email=$_COOKIE["email"];
