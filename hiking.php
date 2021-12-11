@@ -30,6 +30,7 @@ $email=$_COOKIE["email"];
     $array1['email']=$email;
     $array1['companyName']='Spartan Tours and Travels';
     $array1['productName']=$prod["Description"];
+    $array1['visited']=$_COOKIE["count"];
     $data=json_encode($array1);
 curl_setopt_array($curl, array(
   CURLOPT_URL => 'http://rohitky.me/REST/tracking.php',
