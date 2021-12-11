@@ -25,7 +25,7 @@ if (!isset($_COOKIE["visited_pages"])) {
 
 
 $curl = curl_init();
-$email=$_COOKIE['email'];
+$email=$_COOKIE["email"];
     $array1=array();
     $array1['email']=$email;
     $array1['companyName']='Spartan Tours and Travels';
