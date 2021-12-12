@@ -1,5 +1,11 @@
 <?php
 $visited =0;
+if(isset ($_COOKIE)){
+  // foreach($_COOKIE)
+  print_r($_COOKIE);
+}
+
+
 $curl = curl_init();
 $email=$_COOKIE["email"];
     $array1=array();
@@ -23,11 +29,6 @@ curl_setopt_array($curl, array(
   ),
 ));
 ?>
-
-
-
-
-
 
 
 <!DOCTYPE html>
