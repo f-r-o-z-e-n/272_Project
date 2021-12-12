@@ -1,9 +1,6 @@
 <?php
-$visited =0;
-if(isset ($_COOKIE)){
-  // foreach($_COOKIE)
-  print_r($_COOKIE);
-}
+$visited =$_COOKIE["count"];
+
 
 
 $curl = curl_init();
@@ -12,7 +9,7 @@ $email=$_COOKIE["email"];
     $array1['email']=$email;
     $array1['companyName']='Spartan';
     // $array1['productName']=$prod["Description"];
-    $array1['visited']=$visted++;
+    $array1['visited']=$visted;
     $data=json_encode($array1);
 curl_setopt_array($curl, array(
   CURLOPT_URL => 'http://rohitky.me/REST/tracking.php',
