@@ -7,7 +7,7 @@ $product_name = 'Hiking';
 if($_SERVER["REQUEST_METHOD"]=="POST"){
   $rating_value = $POST["rating"];
   $review_text = $POST["review"];
-  $sql1="Select * from afroz.overallratings where product_name='".$product_name."'";
+  $sql1="Select * from AFROZDB.overallratings where product_name='".$product_name."'";
         $result=mysqli_query($con, $sql1);
         $count=0;
         $orating=0;
@@ -19,11 +19,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         }else{echo $sql1;}
          $orating=(($orating*$count)+$rating_value)/($count+1);
          $count=$count+1;
-         $sql2 = "UPDATE afroz.overallratings set count=".$count.",rating=".$orating." where product_name='".$product_name."';";
+         $sql2 = "UPDATE AFROZDB.overallratings set count=".$count.",rating=".$orating." where product_name='".$product_name."';";
     
          if ($con->query($sql2) === TRUE) {
           
-          $sql3 = "INSERT INTO afroz.ratings (product_name,review, rating) VALUES ('".$product_name."','".$review_text."',".$rating_value.");";
+          $sql3 = "INSERT INTO AFROZDB.ratings (product_name,review, rating) VALUES ('".$product_name."','".$review_text."',".$rating_value.");";
               
           if ($con->query($sql3) === TRUE) {
             header("location: hiking.php");
@@ -36,7 +36,41 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         }
 }
 
-?>
+?><br/>
+<br/>
+
+          <h3>Customer's review</h3><br>
+          <?php
+// Prepare a select statement
+
+$sql4 = "SELECT rating FROM AFROZDB.overallratings WHERE product_name = '".$product_name."';";
+$result1 = mysqli_query($con, $sql4);
+
+    if ($result1->num_rows > 0) {
+      while($row = $result1->fetch_assoc()) {
+        echo "Overall Rating :{$row['rating']}  <br> ";   
+      }
+    }else{
+      echo "zero rows";
+    }
+
+    ?>
+    <br/>
+          <?php
+
+$sql5 = "SELECT rating, review FROM AFROZDB.ratings WHERE product_name = '".$product_name."';";
+
+$result = mysqli_query($conn, $sql5);
+$i = 1;
+    if ($result->num_rows > 0) {
+      while($row = $result->fetch_assoc()) {
+        echo $i.") Rating :{$row['rating']}  <br> ";   
+          echo "  Review:{$row['review']}  <br><br> ";  
+          $i++; 
+      }
+    }
+    $conn->close();
+ ?>        
 <?php
 // $con = mysqli_connect('localhost', 'root', '');
 $con = mysqli_connect('localhost', 'root', 'afroz');
