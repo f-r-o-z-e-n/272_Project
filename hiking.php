@@ -1,6 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+$con = mysqli_connect('localhost', 'root', 'afroz');
+mysqli_select_db($con, 'overallRatings');
+$product_name = 'Hiking';
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  $rating_value = $POST["rating"];
+  $review_text = $POST["review"];
+  $sql1="Select * from afroz.overallratings where product_name='".$product_name."'";
+        $result=mysqli_query($con, $sql1);
+        $count=0;
+        $orating=0;
+        if ($result->num_rows > 0) {
+          while($row = $result->fetch_assoc()) {
+            $count=$row['count'];
+            $orating= $row['rating'];
+          }
+        }else{echo $sql1;}
+         $orating=(($orating*$count)+$rating_value)/($count+1);
+         $count=$count+1;
+         $sql2 = "UPDATE afroz.overallratings set count=".$count.",rating=".$orating." where product_name='".$product_name."';";
+    
+         if ($con->query($sql2) === TRUE) {
+          
+          $sql3 = "INSERT INTO afroz.ratings (product_name,review, rating) VALUES ('".$product_name."','".$review_text."',".$rating_value.");";
+              
+          if ($con->query($sql3) === TRUE) {
+            header("location: hiking.php");
+          } else {
+            echo "Error: " . $sql3 . "<br>" . $con->error;
+          }
+    
+        } else {
+          echo "Error: " . $sql2 . "<br>" . $con->error;
+        }
+}
 
+?>
 <?php
 // $con = mysqli_connect('localhost', 'root', '');
 $con = mysqli_connect('localhost', 'root', 'afroz');
@@ -146,9 +182,9 @@ if (isset($_COOKIE["id"])) {
     </fieldset>
     </form>
 
-    <div class="footer">
+    <!-- <div class="footer">
       <p>@copyright: afroz@sjsu.edu</p>
-    </div>
+    </div> -->
   </div>
 </body>
 
